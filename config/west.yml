@@ -1,4 +1,4 @@
-# This file specifies the build dependencies for Github Action workflows and
+  # This file specifies the build dependencies for Github Action workflows and
 # for local build environments. The workspace has four toplevel directories
 # containing the user config, modules, zephy and ZMK.
 #

@@ -26,6 +26,10 @@ manifest:
       url-base: https://github.com/urob
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: beekeeb
+      url-base: https://github.com/beekeeb
+    - name: ambrosia
+      url-base: https://github.com/ambrosia
 
   projects:
     - name: zmk
@@ -45,6 +49,16 @@ manifest:
       path: modules/zmk/tri-state
     - name: zmk-unicode
       path: modules/zmk/unicode
+    - name: zmk-behavior-magic-keys
+      remote: ambrosia
+      revision: single-instance
+      path: modules/zmk/magic-keys
+
+    - name: zmk-keyboard-toucan
+      remote: beekeeb
+      revision: main
+      import: config/west.yml
+      path: modules/zmk-keyboard-toucan
 
     # Only source necessary Zephyr modules. Remove this entire section to restore
     # the default (needed for less common hardware).

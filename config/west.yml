@@ -28,6 +28,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: beekeeb
       url-base: https://github.com/beekeeb
+    - name: geeksville
+      url-base: https://github.com/geeksville
     - name: caksoylar
       url-base: https://github.com/caksoylar
     - name: ambrosia
@@ -57,7 +59,7 @@ manifest:
       path: modules/zmk/magic-keys
 
     - name: zmk-keyboard-toucan
-      remote: beekeeb
+      remote: geeksville
       revision: main
       import: config/west.yml
       path: modules/zmk-keyboard-toucan

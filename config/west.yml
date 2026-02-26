@@ -28,6 +28,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: beekeeb
       url-base: https://github.com/beekeeb
+    - name: caksoylar
+      url-base: https://github.com/caksoylar
     - name: ambrosia
       url-base: https://github.com/ambrosia
 
@@ -59,6 +61,13 @@ manifest:
       revision: main
       import: config/west.yml
       path: modules/zmk-keyboard-toucan
+
+    # The ZMK Toucan module uses the main branch of rgbled-widget
+    # but that no longer works, we need to use the v0.3 branch
+    # to match ZMK
+    - name: zmk-rgbled-widget
+      remote: caksoylar
+      revision: v0.3
 
     # Only source necessary Zephyr modules. Remove this entire section to restore
     # the default (needed for less common hardware).

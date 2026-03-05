@@ -30,8 +30,6 @@ manifest:
       url-base: https://github.com/beekeeb
     - name: geeksville
       url-base: https://github.com/geeksville
-    - name: caksoylar
-      url-base: https://github.com/caksoylar
     - name: ambrosia
       url-base: https://github.com/ambrosia
 
@@ -43,16 +41,23 @@ manifest:
     # ZMK modules
     - name: zmk-adaptive-key
       path: modules/zmk/adaptive-key
+    
     - name: zmk-auto-layer
       path: modules/zmk/auto-layer
+      
     - name: zmk-helpers
       path: modules/zmk/helpers
+      
+    
     - name: zmk-leader-key
       path: modules/zmk/leader-key
+      
     - name: zmk-tri-state
       path: modules/zmk/tri-state
+      
     - name: zmk-unicode
       path: modules/zmk/unicode
+      
     - name: zmk-behavior-magic-keys
       remote: ambrosia
       revision: single-instance
@@ -63,13 +68,6 @@ manifest:
       revision: main
       import: config/west.yml
       path: modules/zmk-keyboard-toucan
-
-    # The ZMK Toucan module uses the main branch of rgbled-widget
-    # but that no longer works, we need to use the v0.3 branch
-    # to match ZMK
-    - name: zmk-rgbled-widget
-      remote: caksoylar
-      revision: v0.3
 
     # Only source necessary Zephyr modules. Remove this entire section to restore
     # the default (needed for less common hardware).

@@ -32,6 +32,8 @@ manifest:
       url-base: https://github.com/geeksville
     - name: ambrosia
       url-base: https://github.com/ambrosia
+    - name: joelspadin
+      url-base: https://github.com/joelspadin
 
   projects:
     - name: zmk
@@ -62,6 +64,11 @@ manifest:
       remote: ambrosia
       revision: single-instance
       path: modules/zmk/magic-keys
+      
+    - name: zmk-locales
+      remote: joelspadin
+      revision: main
+      path: modules/zmk/locales
 
     - name: zmk-keyboard-toucan
       remote: geeksville

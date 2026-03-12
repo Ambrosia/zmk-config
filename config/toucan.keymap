@@ -90,7 +90,7 @@
         >;
 
         scroller {
-            layers = <NAV SYS>;
+            layers = <NAV SYM>;
             input-processors = <
                 &zip_xy_to_scroll_mapper
                 // Passing values over 16 may cause overflows
@@ -100,7 +100,7 @@
         };
 
         base {
-            layers = <BASE NAV SYS>;
+            layers = <BASE NAV SYM>;
             input-processors = <
                 &touch_processor
             >;
@@ -172,10 +172,10 @@
         touch {
             display-name = "tch";
             bindings = <
-                &none &none      &none     &none    &none     &none      &mkp LCLK &none &none &none &none &mo SYS
-                &none &kp LSHIFT &kp LCTRL &kp LALT &kp LGUI  &mkp MCLK  &mkp RCLK &none &none &none &none &none 
-                &none &none      &none     &none    &none     &none      &mkp MCLK &none &none &none &none &none 
-                                           &mo NAV  &mkp LCLK &mkp RCLK  &none     &none &none
+                &none &none      &none     &none    &none     &none      &mkp LCLK &mkp MB4 &mkp MB5 &none &none &none
+                &none &kp LSHIFT &kp LCTRL &kp LALT &kp LGUI  &mkp MCLK  &mkp RCLK &none    &none    &none &none &to BASE
+                &none &none      &none     &none    &none     &none      &mkp MCLK &none    &none    &none &none &none 
+                                           &mo NAV  &mkp LCLK &mkp RCLK  &none     &none    &mo SYM
             >;
         };
     };

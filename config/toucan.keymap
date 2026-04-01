@@ -22,6 +22,7 @@
 #define L_BEG LG(LEFT)      // Line beginning (Mac)
 #define L_END LG(RIGHT)     // Line end (Mac)
 #define LANG  LC(SPACE)     // Switch lang (Mac)
+#define FINDR LG(SPACE)     // Finder or Raycast (Mac)
 
 / {
     conditional_layers {
@@ -122,7 +123,7 @@
         base {
             display-name = "base";
             bindings = <
-                &none     &kp J &kp B &kp G &kp D &kp K   &kp Z      &kp C     &kp O     &kp U    &kp COMMA &mo 4
+                &kp FINDR &kp J &kp B &kp G &kp D &kp K   &kp Z      &kp C     &kp O     &kp U    &kp COMMA &mo 4
                 &kp Q     &kp H &kp N &kp S &kp T &kp M   &magic 0   &magic 1  &kp A     &kp E    &kp I     &kp MINUS
                 &kp LGUI  &kp Y &kp P &kp F &kp V &kp X   &kp SQT    &kp W     &kp SLASH &kp SEMI &kp DOT   &none
                                 &mo NAV     &kp R &kp L   &kp LSHIFT &kp SPACE &mo SYM

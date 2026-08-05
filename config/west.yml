@@ -70,11 +70,11 @@ manifest:
       revision: main
       path: modules/zmk/locales
 
-    - name: zmk-keyboard-toucan
-      remote: geeksville
+    - name: zmk-keyboard-toucan2
+      remote: beekeeb
       revision: main
       import: config/west.yml
-      path: modules/zmk-keyboard-toucan
+      path: modules/zmk-keyboard-toucan2
 
     # Only source necessary Zephyr modules. Remove this entire section to restore
     # the default (needed for less common hardware).

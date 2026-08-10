@@ -22,6 +22,11 @@
 #define LANG  LC(SPACE)     // Switch lang (Mac)
 #define FINDR LG(SPACE)     // Finder or Raycast (Mac)
 
+&is_touching_processor {
+    // Set the current layer to TOUCH when the trackpad is touched 
+    bindings = <&mo TOUCH>;
+};
+
 / {
     conditional_layers {
         compatible = "zmk,conditional-layers";

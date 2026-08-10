@@ -1,0 +1,6 @@
+#include "toucan-common.dtsi"
+
+&tps43_trackpad {
+    // Disable pinch to zoom gesture
+    /delete-property/ zoom;
+};
